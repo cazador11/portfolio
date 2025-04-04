@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+    <meta name="description" content="Browse my portfolio of projects showcasing my skills and expertise.">
+    <meta name="theme-color" content="#6750A4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <title>Jasmine George | Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Material You Design Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Projects | My Professional Portfolio">
+    <meta property="og:description" content="Explore my portfolio of projects and work samples.">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | My Professional Portfolio">
+    <meta name="twitter:description" content="Explore my portfolio of projects and work samples.">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <div class="logo">Jasmine George</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-hero">
+            <div class="container">
+                <h1 class="fade-in">My Projects</h1>
+                <p class="fade-in">Here are some of my recent work and projects.</p>
+            </div>
+        </section>
+
+        <section class="projects-grid">
+            <div class="container">
+                <div class="projects">
+                    <!-- Project 1 -->
+                    <div class="project-card fade-in" data-project="project1">
+                        <div class="project-image">
+                            <img src="assets/images/project1.jpg" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project 1</h3>
+                            <p>Short description of project 1</p>
+                            <button class="view-project" aria-label="View Project 1 details">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card fade-in" data-project="project2">
+                        <div class="project-image">
+                            <img src="assets/images/project2.jpg" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project 2</h3>
+                            <p>Short description of project 2</p>
+                            <button class="view-project" aria-label="View Project 2 details">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card fade-in" data-project="project3">
+                        <div class="project-image">
+                            <img src="assets/images/project3.jpg" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project 3</h3>
+                            <p>Short description of project 3</p>
+                            <button class="view-project" aria-label="View Project 3 details">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Modals -->
+        <div class="modal" id="project1-modal">
+            <div class="modal-content">
+                <button class="close-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-image">
+                    <img src="assets/images/project1.jpg" alt="Project 1">
+                </div>
+                <div class="project-details">
+                    <h3>Project 1</h3>
+                    <p>Detailed description of Project 1. This is where you'd explain the project's purpose, your role, the technologies used, and the outcomes.</p>
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-stack">
+                        <li>Technology 1</li>
+                        <li>Technology 2</li>
+                        <li>Technology 3</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project1" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project2-modal">
+            <div class="modal-content">
+                <button class="close-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-image">
+                    <img src="assets/images/project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-details">
+                    <h3>Project 2</h3>
+                    <p>Detailed description of Project 2. This is where you'd explain the project's purpose, your role, the technologies used, and the outcomes.</p>
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-stack">
+                        <li>Technology 1</li>
+                        <li>Technology 2</li>
+                        <li>Technology 3</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project2" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="project3-modal">
+            <div class="modal-content">
+                <button class="close-modal" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-image">
+                    <img src="assets/images/project3.jpg" alt="Project 3">
+                </div>
+                <div class="project-details">
+                    <h3>Project 3</h3>
+                    <p>Detailed description of Project 3. This is where you'd explain the project's purpose, your role, the technologies used, and the outcomes.</p>
+                    <h3>Technologies Used</h3>
+                    <ul class="tech-stack">
+                        <li>Technology 1</li>
+                        <li>Technology 2</li>
+                        <li>Technology 3</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project3" class="btn" target="_blank" rel="noopener noreferrer">View Code</a>
+                        <a href="#" class="btn" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; <span id="year"></span> Jasmine George. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html> 
